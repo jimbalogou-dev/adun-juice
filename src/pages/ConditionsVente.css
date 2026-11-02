@@ -1,0 +1,31 @@
+.cgv {
+  padding: 56px 0 72px;
+}
+
+.cgv__contenu {
+  max-width: 780px;
+}
+
+.cgv h1 {
+  margin-bottom: 8px;
+}
+
+.cgv__maj {
+  color: var(--texte-doux);
+  font-size: 0.9rem;
+  margin-bottom: 32px;
+}
+
+.cgv h2 {
+  font-size: 1.2rem;
+  margin: 32px 0 10px;
+}
+
+.cgv p {
+  line-height: 1.7;
+  color: var(--texte);
+}
+
+@media (max-width: 860px) {
+  .cgv { padding: 40px 0 56px; }
+}

@@ -1,0 +1,60 @@
+.produit-carte {
+  display: flex;
+  flex-direction: column;
+  background: var(--blanc);
+  border: 1px solid var(--bordure);
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: var(--ombre);
+}
+
+.produit-carte__image {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.produit-carte__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.produit-carte__image:hover img {
+  transform: scale(1.04);
+}
+
+.produit-carte__texte {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px 6px 6px;
+}
+
+.produit-carte__texte h3 {
+  margin-bottom: 8px;
+}
+
+.produit-carte__resume {
+  color: var(--texte-doux);
+  margin-bottom: 14px;
+}
+
+.produit-carte__prix {
+  font-weight: 600;
+  color: var(--vert-fonce);
+  margin-bottom: 18px;
+}
+
+.produit-carte__prix small {
+  font-weight: 400;
+  color: var(--texte-doux);
+}
+
+.produit-carte__bouton {
+  margin-top: auto;
+  text-align: center;
+}

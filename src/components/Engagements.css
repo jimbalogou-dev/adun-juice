@@ -1,0 +1,40 @@
+.engagements {
+  background: var(--blanc);
+  border-bottom: 1px solid var(--bordure);
+}
+
+/* 4 colonnes égales sur grand écran */
+.engagements__liste {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-block: 28px;
+}
+
+.engagement {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Pastille ronde verte autour de l'icône */
+.engagement__icone {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--blanc);
+  background: var(--vert-bouton);
+  border-radius: 50%;
+}
+
+.engagement strong { display: block; font-size: 0.95rem; color: var(--texte); }
+.engagement small { display: block; font-size: 0.82rem; color: var(--texte-doux); }
+
+@media (max-width: 860px) {
+  .engagements__liste { grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+}
+@media (max-width: 480px) {
+  .engagements__liste { grid-template-columns: 1fr; }
+}

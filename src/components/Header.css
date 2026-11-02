@@ -1,0 +1,162 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--blanc);
+  border-bottom: 1px solid var(--bordure);
+}
+
+.header__interieur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 72px;
+}
+
+.header__logo img { height: 48px; width: auto; }
+
+.header__menu ul { display: flex; gap: 28px; }
+.header__menu a {
+  position: relative;
+  padding-block: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--texte);
+}
+.header__menu a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 2px;
+  background: var(--vert);
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+.header__menu a:hover::after { transform: scaleX(1); }
+
+.header__bouton { padding: 10px 22px; }
+
+/* Le bouton ☰ est caché sur grand écran */
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0 10px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.header__burger span {
+  display: block;
+  height: 3px;
+  background: var(--vert-fonce);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+/* Quand le menu est ouvert, les 3 traits deviennent une croix ✕ */
+.header__burger--ouvert span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.header__burger--ouvert span:nth-child(2) { opacity: 0; }
+.header__burger--ouvert span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* ---------- Petits écrans (tablette et téléphone) ---------- */
+@media (max-width: 860px) {
+  .header__burger { display: flex; }
+
+  /* Le menu devient un panneau qui descend sous la barre */
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 8px 16px 20px;
+    background: var(--blanc);
+    border-bottom: 1px solid var(--bordure);
+    box-shadow: var(--ombre);
+  }
+  .header__menu--ouvert { display: block; }
+
+  .header__menu ul { flex-direction: column; gap: 0; }
+  .header__menu li { border-bottom: 1px solid var(--bordure); }
+  .header__menu a { display: block; padding: 14px 4px; font-size: 1rem; }
+  .header__menu a::after { display: none; }
+}
+
+/* Très petits téléphones : bouton plus compact */
+@media (max-width: 420px) {
+  .header__interieur { gap: 8px; }
+  .header__bouton { padding: 8px 14px; font-size: 0.85rem; }
+}
+
+.header__menu a.active { color: var(--vert-bouton); font-weight: 600; }
+.header__menu a.active::after { transform: scaleX(1); }
+
+.header__menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--ocre-fonce);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.header__panier {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--texte);
+  transition: background 0.2s, color 0.2s;
+}
+
+.header__panier svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header__panier:hover,
+.header__panier.active {
+  background: var(--fond-creme);
+  color: var(--vert-fonce);
+}
+
+.header__badge {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--ocre-fonce);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .header__panier {
+    margin-left: auto;
+  }
+}

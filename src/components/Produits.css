@@ -1,0 +1,24 @@
+.produits { padding-block: 64px; background: var(--blanc); }
+
+/* Titre centré */
+.produits__entete { max-width: 560px; margin: 0 auto 40px; text-align: center; }
+.produits__entete h2 { margin-block: 6px 10px; }
+.produits__entete p:last-child { color: var(--texte-doux); }
+
+/* La grille : 3 cartes de même largeur côte à côte */
+.produits__grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Tablette : 2 colonnes */
+@media (max-width: 960px) {
+  .produits__grille { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Téléphone : 1 colonne */
+@media (max-width: 600px) {
+  .produits { padding-block: 48px; }
+  .produits__grille { grid-template-columns: 1fr; }
+}

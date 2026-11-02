@@ -1,0 +1,87 @@
+.footer {
+  background: var(--nuit);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.footer__grille {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr 1fr;
+  gap: 40px;
+  padding-block: 48px;
+}
+
+.footer__logo {
+  display: inline-block;
+  padding: 8px 12px;
+  background: var(--blanc);
+  border-radius: 12px;
+}
+.footer__logo img { height: 56px; width: auto; }
+
+.footer__marque p { margin-top: 16px; max-width: 28ch; }
+
+.footer h3 {
+  margin-bottom: 14px;
+  font-family: var(--police-texte);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--or-clair);
+}
+
+.footer li { margin-bottom: 8px; font-size: 0.92rem; }
+
+.footer a { text-decoration: none; transition: color 0.2s; }
+.footer a:hover { color: var(--or-clair); text-decoration: underline; }
+
+/* Icônes des réseaux sociaux */
+.footer__reseaux {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__reseaux a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.footer__reseaux a:hover {
+  background: var(--or-clair);
+  border-color: var(--or-clair);
+  color: var(--nuit);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.footer__reseaux svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__bas {
+  padding-block: 16px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 860px) {
+  .footer__grille { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer__marque { grid-column: 1 / -1; }
+}
+@media (max-width: 520px) {
+  .footer__grille { grid-template-columns: 1fr; padding-block: 36px; }
+}
+
+.footer__legal {
+  margin-top: 18px;
+  font-size: 0.85rem;
+}

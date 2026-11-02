@@ -1,0 +1,152 @@
+.contact {
+  padding: 56px 0 72px;
+}
+
+.contact h1 {
+  margin: 4px 0 12px;
+}
+
+.contact__intro {
+  max-width: 640px;
+  color: var(--texte-doux);
+  line-height: 1.7;
+  margin-bottom: 44px;
+}
+
+.contact__grille {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contact h2 {
+  font-size: 1.3rem;
+  margin-bottom: 22px;
+}
+
+/* Coordonnées */
+.contact__infos dl {
+  margin: 0;
+  display: grid;
+  gap: 22px;
+}
+
+.contact__infos dt {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ocre-fonce);
+  margin-bottom: 4px;
+}
+
+.contact__infos dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.5;
+}
+
+.contact__infos dd a {
+  width: fit-content;
+  color: var(--vert-fonce);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact__infos dd a:hover {
+  color: var(--ocre-fonce);
+}
+
+.contact__actions {
+  display: flex;
+  gap: 24px;
+}
+
+/* Formulaire */
+.contact__champs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.contact__large {
+  grid-column: 1 / -1;
+}
+
+.contact__formulaire label {
+  display: grid;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.contact__formulaire input,
+.contact__formulaire select,
+.contact__formulaire textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--bordure);
+  border-radius: 4px;
+  font: inherit;
+  background: var(--blanc);
+  color: var(--texte);
+}
+
+.contact__formulaire input:focus,
+.contact__formulaire select:focus,
+.contact__formulaire textarea:focus {
+  outline: 2px solid var(--vert-bouton);
+  outline-offset: 1px;
+}
+
+.contact__formulaire textarea {
+  resize: vertical;
+}
+
+.contact__formulaire .bouton:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.contact__merci p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.contact__info {
+  color: var(--vert-fonce);
+  font-weight: 500;
+}
+
+.contact__info--alerte {
+  color: #a32d2d;
+}
+
+/* Ligne vers la commande */
+.contact__commande {
+  margin-top: 48px;
+  color: var(--texte-doux);
+}
+
+.contact__commande a {
+  color: var(--vert-fonce);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact__commande a:hover {
+  color: var(--ocre-fonce);
+}
+
+@media (max-width: 860px) {
+  .contact { padding: 40px 0 56px; }
+  .contact__grille { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 520px) {
+  .contact__champs { grid-template-columns: 1fr; }
+}

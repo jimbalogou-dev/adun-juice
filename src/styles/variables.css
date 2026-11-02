@@ -1,0 +1,36 @@
+/* Les polices (Google Fonts) : un titre élégant + un texte très lisible */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Poppins:wght@400;500;600&display=swap");
+
+/* Les "variables" : on définit chaque couleur UNE fois, puis on les réutilise partout. */
+:root {
+  /* Couleurs de la marque (fiche client) */
+  --vert: #669d34;
+  --ocre: #ca8a04;
+  --blanc: #ffffff;
+
+  /* Variantes pour que le texte reste lisible */
+  --vert-bouton: #4a7a25;   /* boutons avec texte blanc */
+  --vert-fonce: #2f5a17;    /* titres et pied de page */
+  --ocre-fonce: #8a5d00; 
+    --nuit: #1f2723;          /* fond du pied de page : gris-vert très sombre */
+  --or-clair: #e7c26a;      /* titres du pied de page */   /* petits textes ocre sur fond clair */
+
+  /* Fonds et textes */
+  --fond-creme: #f8f6ef;
+  --texte: #1f2a14;
+  --texte-doux: #5b6b4f;
+  --bordure: #e6e2d3;
+
+  /* Polices */
+  --police-titre: "Fraunces", Georgia, serif;
+  --police-texte: "Poppins", system-ui, sans-serif;
+
+  /* Formes et ombres */
+  --rayon: 14px;
+  --rayon-bouton: 999px;
+  --ombre: 0 4px 16px rgba(47, 90, 23, 0.1);
+
+  /* Largeur maximale du contenu */
+  --largeur: 1440px;
+}
+     

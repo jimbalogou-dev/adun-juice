@@ -1,0 +1,23 @@
+.evenement {
+  background: var(--fond-creme);
+  padding: 72px 0;
+}
+
+.evenement__contenu {
+  max-width: 720px;
+  text-align: center;
+}
+
+.evenement h2 {
+  margin-bottom: 14px;
+}
+
+.evenement p {
+  color: var(--texte-doux);
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 860px) {
+  .evenement { padding: 48px 0; }
+}

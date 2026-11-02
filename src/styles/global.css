@@ -1,0 +1,110 @@
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--police-texte);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--texte);
+  background: var(--blanc);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+ul { list-style: none; padding: 0; }
+
+/* -- Les Titres -- */
+h1, h2, h3 {
+  font-family: var(--police-titre);
+  color: var(--vert-fonce);
+  line-height: 1.15;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.25rem); }
+h3 { font-size: 1.15rem; }
+
+
+.conteneur {
+  width: 100%;
+  max-width: var(--largeur);
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/* Petit texte doré au-dessus des titres ("NOS PRODUITS") */
+.sur-titre {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ocre-fonce);
+}
+
+/* Le bouton principal (vert) */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-family: var(--police-texte);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--blanc);
+  background: var(--vert-bouton);
+  border: 2px solid var(--vert-bouton);
+  border-radius: var(--rayon-bouton);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.bouton:hover { background: var(--vert-fonce); border-color: var(--vert-fonce); transform: translateY(-2px); }
+
+/* Variante : bouton contour (vert, fond transparent) */
+.bouton--contour { background: transparent; color: var(--vert-bouton); }
+.bouton--contour:hover { color: var(--blanc); }
+
+/* Variante : bouton ocre (texte foncé pour rester lisible) */
+.bouton--ocre { background: var(--ocre); border-color: var(--ocre); color: var(--texte); }
+.bouton--ocre:hover { background: #b17a03; border-color: #b17a03; }
+
+/* Accessibilité : un contour bien visible quand on navigue au clavier */
+:focus-visible { outline: 3px solid var(--ocre); outline-offset: 3px; }
+
+/* Texte caché à l'écran mais lu par les lecteurs d'écran */
+.invisible {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* Quand on clique sur le menu, la section s'arrête sous la barre fixe du haut */
+section[id] { scroll-margin-top: 72px; }
+
+
+.lien-plus {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  align-self: flex-start;
+  font-weight: 600;
+  color: var(--vert-fonce);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.lien-plus span {
+  transition: transform 0.2s;
+}
+
+.lien-plus:hover {
+  color: var(--ocre-fonce);
+}
+
+.lien-plus:hover span {
+  transform: translateX(4px);
+}
