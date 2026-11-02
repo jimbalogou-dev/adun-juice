@@ -1,11 +1,11 @@
 import photo1 from "../assets/galerie/photo-1.jpg";
 import photo2 from "../assets/galerie/photo-2.webp";
 import photo3 from "../assets/galerie/photo-3.webp";
-import photo4 from "../assets/galerie/photo-4.jpg";
-import photo5 from "../assets/galerie/photo-5.jpg";
-import photo6 from "../assets/galerie/photo-6.jpg";
-import photo7 from "../assets/galerie/photo-7.jpg";
-import photo8 from "../assets/galerie/photo-8.jpg";
+import photo4 from "../assets/galerie/Photo-4.jpg";
+import photo5 from "../assets/galerie/Photo-5.jpg";
+import photo6 from "../assets/galerie/Photo-6.jpg";
+import photo7 from "../assets/galerie/Photo-7.jpg";
+import photo8 from "../assets/galerie/Photo-8.jpg";
 import photo10 from "../assets/galerie/photo-10.jpg";
 
 
