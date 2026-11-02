@@ -6,7 +6,7 @@ import photo5 from "../assets/galerie/Photo-5.jpg";
 import photo6 from "../assets/galerie/Photo-6.jpg";
 import photo7 from "../assets/galerie/Photo-7.jpg";
 import photo8 from "../assets/galerie/Photo-8.jpg";
-import photo10 from "../assets/galerie/photo-10.jpg";
+import photo10 from "../assets/galerie/Photo-10.jpg";
 
 
 const galerie = [
