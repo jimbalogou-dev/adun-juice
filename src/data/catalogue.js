@@ -19,10 +19,10 @@ const catalogue = [
     ],
     ingredients: "Ananas, gingembre, menthe, pastèque",
     fabrication: [
-      "Sélection et lavage des fruits [À confirmer]",
-      "Extraction du jus [À confirmer : méthode d'extraction]",
-      "Pasteurisation [À confirmer : température et durée]",
-      "Mise en bouteille et refroidissement [À confirmer]",
+      "Sélectionner des fruits mûrs et intacts, puis les laver à l’eau potable et les préparer selon la recette.",
+      "Extraire le jus, doser les ingrédients et assembler la préparation selon la saveur choisie.",
+      "Filtrer si nécessaire, puis appliquer un traitement thermique adapté à la recette et à l’équipement, selon un procédé validé.",
+      "Conditionner dans des bouteilles propres adaptées au contact alimentaire, fermer, refroidir et conserver selon le procédé retenu.",
     ],
   },
   {
@@ -41,10 +41,10 @@ const catalogue = [
     ],
     ingredients: "Lait, saveur au choix (chocolat, menthe ou vanille)",
     fabrication: [
-      "Préparation du lait [À confirmer]",
-      "Fermentation [À confirmer]",
-      "Ajout de la saveur choisie [À confirmer]",
-      "Conditionnement et mise au frais [À confirmer]",
+      "Préparer le lait et réaliser, si la recette le prévoit, le traitement thermique adapté.",
+      "Laisser le lait atteindre la température adaptée à la culture, puis incorporer les ferments.",
+      "Laisser fermenter dans des conditions maîtrisées jusqu’à l’obtention de la texture et de l’acidité recherchées.",
+      "Ajouter la saveur choisie au moment adapté à la recette, répartir en pots propres et conserver au frais.",
     ],
   },
   {
@@ -63,9 +63,9 @@ const catalogue = [
     ],
     ingredients: "Fruits frais au choix, notamment ananas, fraise, banane, orange, kiwi et raisin (selon la disponibilité)",
     fabrication: [
-      "Choix des fruits avec vous [À confirmer]",
-      "Lavage, épluchage et découpe [À confirmer]",
-      "Mise en pots et au frais [À confirmer]",
+      "Choisir les fruits frais selon la commande et écarter ceux qui sont abîmés.",
+      "Laver les fruits à l’eau potable, puis les éplucher et les découper avec du matériel propre.",
+      "Assembler et répartir les fruits en pots propres, puis conserver au frais jusqu’à la remise.",
     ],
   },
 ];

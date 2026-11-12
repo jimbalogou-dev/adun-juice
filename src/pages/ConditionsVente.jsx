@@ -38,38 +38,39 @@ function ConditionsVente() {
 
         <h2>5. Paiement</h2>
         <p>
-          Modes de paiement acceptés : [À confirmer : espèces, mobile money, etc.].
-          Moment du paiement : [À confirmer : à la commande, à la livraison].
+          Un acompte de 50 % du montant total est à régler au moment de la commande.
+          Le solde de 50 % est dû à la livraison ou au retrait de la commande. Les
+          moyens de paiement sont convenus avec Adùn Juice lors de la confirmation
+          de la commande.
         </p>
 
         <h2>6. Livraison ou retrait</h2>
         <p>
-          Zones desservies : [À confirmer]. Frais de livraison : [À confirmer].
-          Délais : [À confirmer]. Retrait possible sur place à {contact.adresse} :
-          [À confirmer].
+          Zones desservies : Calavi, Cotonou et environs. Frais de livraison : [À confirmer à l'occasion de la commande].
+          Délais : la date de livraison. Retrait possible sur place à {contact.adresse} :
+
         </p>
 
         <h2>7. Produits frais : conservation</h2>
         <p>
           Nos produits sont frais et doivent être conservés au froid. Durée de
-          conservation conseillée : [À confirmer]. Une fois remis au client, la
-          conservation devient sa responsabilité.
+          conservation conseillée : nos produits peuvent être conservés au froid pendant de bon moments que souhaité.
         </p>
 
         <h2>8. Annulation, retours et réclamations</h2>
         <p>
-          Les produits étant périssables, [À confirmer : conditions d'annulation et
-          d'échange]. En cas de problème avec une commande (produit non conforme,
-          erreur), contactez-nous le plus vite possible au {contact.telephone}.
+          Si le vous annulez une commande après le début de la production, l'acompte
+          versé n'est pas remboursable. Si une commande confirmée n'est pas livrée
+          du fait d'Adùn Juice, vous pouvez demander le remboursement des sommes
+          déjà versées. En cas de produit non conforme ou d'erreur, contactez-nous
+          dès que possible au {contact.telephone} afin que la situation soit examinée.
+          Ces conditions s'appliquent sous réserve des dispositions légales en vigueur.
         </p>
 
         <h2>9. Contact</h2>
         <p>
           Pour toute question : {contact.telephone} (appel ou WhatsApp).
         </p>
-
-        <h2>10. Droit applicable</h2>
-        <p>[À confirmer : droit applicable et juridiction compétente.]</p>
       </div>
     </section>
   );

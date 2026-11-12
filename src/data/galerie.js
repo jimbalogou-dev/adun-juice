@@ -6,7 +6,7 @@ import photo5 from "../assets/galerie/Photo-5.jpg";
 import photo6 from "../assets/galerie/Photo-6.jpg";
 import photo7 from "../assets/galerie/Photo-7.jpg";
 import photo8 from "../assets/galerie/Photo-8.jpg";
-import photo10 from "../assets/galerie/Photo-10.jpg";
+import photo11 from "../assets/galerie/Photo-11.jpg";
 
 
 const galerie = [
@@ -51,14 +51,16 @@ const galerie = [
   },
   {
     id: 4,
-    image: photo10,
-    alt: "Gobelets de boissons Adùn Juice de différentes couleurs avec couvercles et pailles",
-    titre: "Jus de fruits à emporter",
-    description: "Des boissons présentées en gobelets pratiques, parfaites pour les pauses, les sorties et les événements.",
+    image: photo11,
+    alt: "Les boissons Adùn Juice de différentes couleurs et saveurs, présents sur vos événements",
+    titre: "Boissons pour vos événements",
+    description: "Des boissons idéales pour vos événements.",
     detail: [
-      "Cette présentation convient aux commandes individuelles, aux rencontres entre amis, aux cérémonies et aux réceptions.",
-      "Grâce à leur format facile à servir, les gobelets, avec couvercles et pailles, sont adaptés aux clients qui souhaitent profiter de leur boisson sans verre supplémentaire.",
-      "Les parfums et la composition de chaque gobelet sont précisés au moment de la commande, selon les boissons disponibles.",
+      "Une expérience rafraîchissante, directement sur votre lieu de réception.",
+      "Chez Adùn Juice, nous accompagnons vos événements avec une sélection de jus de fruits naturels et de yaourts.",
+      "Grâce à notre service de distribution sur place, vos invités peuvent profiter de leurs boissons préférées, servies directement dans des gobelets avec pailles.",
+      "Mariages, anniversaires, séminaires, formations ou cérémonies : nous adaptons notre prestation à vos besoins et au nombre de participants.",
+      "Vous organisez, Adùn s'occupe de rafraîchir vos invités !",
     ],
     ingredients: "Selon le jus choisi.",
     produit: "jus",
@@ -66,28 +68,30 @@ const galerie = [
   {
     id: 5,
     image: photo7,
-    alt: "Bouteilles de jus d'ananas à la pastèque Adùn Juice de couleur rosée",
-    titre: "Pack de jus d'ananas",
+    alt: "Bouteilles de jus d'ananas à la menthe Adùn Juice de couleur rosée",
+    titre: "Pack de jus d'ananas à menthe",
     description: "Une boisson fruitée à base d'ananas, présentée dans un format pratique pour toutes vos occasions.",
     detail: [
       "Son apparence colorée, de teinte rosée, attire le regard et apporte de la variété à la gamme de jus Adùn Juice. Il se sert frais, notamment lors des repas en famille, des rencontres ou des événements.",
       "Plusieurs bouteilles peuvent être prévues pour les commandes en quantité, selon les formats et les disponibilités.",
     ],
-    ingredients: "Ananas...",
+    ingredients: "Ananas, menthe",
     produit: "jus",
   },
   {
     id: 6,
     image: photo3,
-    alt: "Gamme de jus Adùn Juice comprenant plusieurs variétés d'ananas, de menthe, de pastèque et de gingembre",
-    titre: "Une gamme de jus aux différentes saveurs",
-    description: "Explorez les différentes saveurs Adùn Juice et choisissez votre association fruitée préférée.",
+    alt: "Gamme de yaourts Adùn Juice comprenant plusieurs variétés d'ananas, de menthe, de pastèque et de gingembre",
+    titre: "Une gamme de yaourts aux différentes saveurs",
+    description: "Découvrez la gamme de yaourts Adùn, préparés pour vous offrir un délicieux moment de gourmandise.",
     detail: [
-      "Explorez la diversité des jus Adùn Juice à travers une gamme de boissons aux couleurs et aux associations de saveurs variées : jus d'ananas à la menthe, jus d'ananas à la pastèque, jus de pastèque et jus d'ananas au gingembre.",
-      "Chaque variété permet de choisir une boisson selon ses préférences et l'occasion : notes aromatiques de la menthe, caractère fruité de la pastèque ou touche plus prononcée du gingembre.",
+      "Vanille, chocolat ou menthe : choisissez la saveur qui vous fait plaisir et profitez d’une texture onctueuse et d’un goût savoureux.",
+      "Que ce soit pour votre petit-déjeuner, une pause gourmande ou pour accompagner vos moments de partage, les yaourts Adùn trouvent leur place à chaque occasion.",
+      "Nos yaourts sont préparés avec soin, en respectant les standards de qualité et d’hygiène, pour vous garantir une expérience gustative agréable et satisfaisante.",
+      "Une envie de douceur ? Laissez-vous tenter par Adùn !",
     ],
-    ingredients: "Selon la variété : ananas, menthe, pastèque, gingembre ...",
-    produit: "jus",
+    ingredients: "Lait, saveur au choix (vanille, chocolat ou menthe)",
+    produit: "yaourts",
   },
   {
     id: 7,
@@ -99,7 +103,7 @@ const galerie = [
       "Cette option intéressera les familles, les anniversaires, les cérémonies, les réunions professionnelles et les événements nécessitant plusieurs boissons. L'ananas associé à la pastèque propose une alternative colorée aux boissons classiques.",
       "Pour toute commande en quantité, renseignez-vous auprès d'Adùn Juice sur les volumes disponibles, les tarifs applicables et les modalités de livraison ou de retrait.",
     ],
-    ingredients: "Ananas, pastèque...",
+    ingredients: "Ananas, gingembre...",
     produit: "jus",
   },
   {

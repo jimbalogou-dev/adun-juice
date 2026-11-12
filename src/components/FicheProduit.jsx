@@ -54,6 +54,11 @@ function FicheProduit({ fil, titre, image, alt, prix, description, ingredients, 
 
             <div className="fiche__fabrication">
               <h2>Comment est-il fabriqué ?</h2>
+              <p>
+                Les étapes ci-dessous sont une proposition indicative. Elles sont à valider
+                et à adapter aux recettes, aux équipements et aux pratiques réelles d’Adùn Juice
+                avant d’être présentées comme son procédé effectif.
+              </p>
               <ol>
                 {fabrication.map((etape) => (
                   <li key={etape}>{etape}</li>
