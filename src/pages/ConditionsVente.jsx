@@ -46,7 +46,7 @@ function ConditionsVente() {
 
         <h2>6. Livraison ou retrait</h2>
         <p>
-          Zones desservies : Calavi, Cotonou et environs. Frais de livraison : [À confirmer à l'occasion de la commande].
+          Zones desservies : Calavi, Cotonou et environs. Frais de livraison à confirmer à l'occasion de la commande.
           Délais : la date de livraison. Retrait possible sur place à {contact.adresse} :
 
         </p>
