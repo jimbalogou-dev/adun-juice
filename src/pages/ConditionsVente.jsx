@@ -54,7 +54,7 @@ function ConditionsVente() {
         <h2>7. Produits frais : conservation</h2>
         <p>
           Nos produits sont frais et doivent être conservés au froid. Durée de
-          conservation conseillée : nos produits peuvent être conservés au froid pendant de bon moments que souhaité.
+          conservation conseillée : nos produits peuvent être conservés au froid pendant de bon moment que souhaité.
         </p>
 
         <h2>8. Annulation, retours et réclamations</h2>
